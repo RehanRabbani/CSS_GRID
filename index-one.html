@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.container{
+    display: grid;
+    grid-template: repeat(3,50px)/repeat(12,1fr);
+    grid-gap: 3px;
+    text-align: center;
+    }
+    .Header{
+        background-color: lightseagreen;
+        grid-column: 2/-1
+    }
+    .Menu{
+        grid-row: 1/-1;
+        background-color: lightblue;
+
+    }
+    .Content{
+        background-color: lightcoral;
+        grid-column: 2/-1;
+    }
+    .Footer{
+        background-color: lightsalmon;
+        grid-column: 2/-1;
+    }
+</style>
+<body>
+    <section class="container">
+
+        <div class="Header">Header</div>
+        <div class="Menu">Menu</div>
+        <div class="Content">Content</div>
+        <div class="Footer">Footer</div>
+    </section>
+    
+</body>
+</html>
