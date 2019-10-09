@@ -15,24 +15,28 @@
 
     grid-gap: 3px;
     text-align: center;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f "
     }
     .Header{
         background-color: lightseagreen;
-        grid-column: 2/-1
+      grid-area: h;
     }
     .Menu{
-        grid-row: 1/-1;
+        grid-area: m;
         background-color: lightblue;
 
     }
     .Content{
         background-color: lightcoral;
-        grid-column: 2/-1;
+        grid-area: c;
         font-size: 10rem;
     }
     .Footer{
         background-color: lightsalmon;
-        grid-column: 2/-1;
+        grid-area: f;
         
     }
 </style>
